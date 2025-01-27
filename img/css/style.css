@@ -80,15 +80,15 @@ main {
             margin-bottom: 1.5rem;
         }
 
-        #list {
-            list-style: none;
+    
 
-            li {
-                margin-top: 1rem; 
-                font-size: 13px;
-            }
-            
+        p {
+            margin-top: 1rem;
+            font-size: 13px;
         }
+
+
+        
     }
 
 }
@@ -102,11 +102,16 @@ main {
         display: flex;
         justify-content: space-between;
 
-        .social_name {
-            display:none;
-            
+        .social_box {
+            display: flex;
+            justify-content: space-between;
         }
- 
+
+        .social_name {
+            display: none;
+
+        }
+
     }
 }
 
@@ -143,11 +148,11 @@ main {
 
     h2 {
         font-size: 20px;
-        font-weight:600;
+        font-weight: 600;
     }
 
     hr {
-        width:10%;
+        width: 10%;
         text-align: left;
         margin: 1rem 0 1rem 0;
     }
@@ -201,11 +206,14 @@ footer {
         text-align: left;
     }
 
-    #jumbotron, #social, #banner, #presentation {
+    #jumbotron,
+    #social,
+    #banner,
+    #presentation {
 
         width: 90%;
         margin: auto;
-    
+
     }
 
     #jumbotron {
@@ -217,7 +225,7 @@ footer {
 
             li {
                 padding-right: 3rem;
-                padding-bottom: 1rem ;
+                padding-bottom: 1rem;
             }
         }
 
@@ -226,6 +234,15 @@ footer {
             #second_titol {
                 display: inline-block;
             }
+        }
+    }
+
+    #instructions {
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+            width: 30%;
         }
     }
 
@@ -248,15 +265,15 @@ footer {
             color: white;
             padding: 1rem 2rem 1rem 2rem;
         }
-    
-    
+
+
         #footer_list {
             list-style: none;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
         }
-    
+
         p {
             margin: 0.5rem 0 0.5rem 0;
         }
@@ -267,12 +284,12 @@ footer {
         width: 90%;
         margin: auto;
         display: block;
-    
+
         img {
             max-width: 100%;
             height: auto;
         }
-    
+
     }
 
     #presentation {
@@ -288,5 +305,145 @@ footer {
 
 }
 
+@media screen and (min-width: 992px) {
+
+    .container {
+        width: 100%;
+        margin: auto;
+        height: 50px;
+        background-color: white;
+        text-align: left;
+    
+        p {
+            width: 95%;
+            margin: auto;
+            font-size: 40px;
+            color: #ff9614;
+            text-shadow: 1px 1px 1px black;
+            font-family: 'Nerko One';
+        }
+    }
+
+    #jumbotron {
+
+        width: 70%;
+        margin: auto;
+        padding-top: 2rem;
+    
+    }
+    
+    #jumbotron_titol {
+    
+        padding: 1rem 0 1rem 0;
+    
+        p {
+            font-size: 12px;
+            color: #a5aec2;
+            margin-bottom: 0.5rem;
+        }
+    
+        span {
+            color: #4e3969;
+            font-size: 30px;
+        }
+    }
+
+    #jumbotron_box {
+
+        display: flex;
+
+        #text_box {
+            width: 40%;
+            padding: 1rem 0 1rem 1rem;
+            
+            #instructions {
+                display: inline;
+
+                p {
+                    font-size: 10px;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+    
+    }
+
+    #social  {
+        
+        width: 70%;
+        margin: auto;
+    
+        .social_name {
+            display: block;
+        }
+    }
+
+    #banner {
+
+        width: 70%;
+        margin: auto;
+        display: block;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    }
+
+    #presentation {
+        width: 70%;
+        margin: auto;
+
+        img {
+            width: 30%;
+            height: auto;
+            float: left;
+        }
+    }
+
+    footer {
+
+        background-color: #7c69a4;
+
+        #footer_box {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 10px;
+            background-color: #7c69a4;
+            text-align: center;
+            color: white;;
+        }
+
+        #footer_information {
+            align-content: center;
+            text-align: left;
+        }
 
 
+        #footer_list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+        }
+
+        p {
+            margin: 0.5rem 0 0.5rem 0;
+        }
+
+        #list_div {
+            align-content: center;
+            
+            li {
+                padding-left: 1rem;
+            }
+        }
+    }
+
+
+
+}
