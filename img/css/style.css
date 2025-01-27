@@ -110,3 +110,79 @@ main {
     border-radius: 30px;
     background-color: white;
 }
+
+#banner {
+
+    width: 90%;
+    margin: auto;
+    display: none;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+#presentation {
+
+    width: 90%;
+    margin: auto;
+
+    #image_presentation {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight:600;
+    }
+
+    hr {
+        width:10%;
+        text-align: left;
+        margin: 1rem 0 1rem 0;
+    }
+
+    img {
+        max-width: 80%;
+        margin: auto;
+        align-items: center;
+    }
+
+    p {
+        font-family: 'Montserrat';
+        font-size: 12px;
+        line-height: 2rem;
+    }
+
+    #presentation_text {
+        font-family: 'Montserrat';
+        padding-bottom: 2rem;
+    }
+
+}
+
+
+footer {
+
+    #footer_box {
+        font-size: 10px;
+        background-color: #7c69a4;
+        text-align: center;
+        color: white;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+
+    #footer_list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    p {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+}
