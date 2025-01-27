@@ -48,8 +48,13 @@ main {
         margin-bottom: 0.5rem;
     }
 
-    h2 {
+    span {
         color: #4e3969;
+        font-size: 20px;
+    }
+
+    #second_titol {
+        display: none;
     }
 }
 
@@ -106,9 +111,12 @@ main {
 }
 
 .social_box {
+
+
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 30px;
     background-color: white;
+    box-shadow: 2px 3px 2px grey;
 }
 
 #banner {
@@ -186,3 +194,99 @@ footer {
         margin: 0.5rem 0 0.5rem 0;
     }
 }
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        text-align: left;
+    }
+
+    #jumbotron, #social, #banner, #presentation {
+
+        width: 90%;
+        margin: auto;
+    
+    }
+
+    #jumbotron {
+
+        #list {
+            padding-right: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                padding-right: 3rem;
+                padding-bottom: 1rem ;
+            }
+        }
+
+        #jumbotron_titol {
+
+            #second_titol {
+                display: inline-block;
+            }
+        }
+    }
+
+    .social_box {
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        border-radius: 30px;
+        background-color: white;
+    }
+
+    footer {
+
+        background-color: #7c69a4;
+
+        #footer_box {
+            width: 60%;
+            margin: auto;
+            font-size: 10px;
+            background-color: #7c69a4;
+            text-align: center;
+            color: white;
+            padding: 1rem 2rem 1rem 2rem;
+        }
+    
+    
+        #footer_list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    
+        p {
+            margin: 0.5rem 0 0.5rem 0;
+        }
+    }
+
+    #banner {
+
+        width: 90%;
+        margin: auto;
+        display: block;
+    
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+    }
+
+    #presentation {
+        padding-top: 2rem;
+
+        img {
+            width: 40%;
+            height: auto;
+            float: left;
+            margin-right: 1rem;
+        }
+    }
+
+}
+
+
+
